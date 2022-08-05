@@ -47,7 +47,6 @@ class MemeEngine():
             draw = ImageDraw.Draw(img_resize)
             font = ImageFont.truetype('arial.ttf', size=20)
             draw.text((10, 30), f'"{text}", {author}', font=font, fill='white')
-            # draw.text((10, 30), f'"{text}", {author}', fill='white')
         return img_resize
 
     def meme_save(self, meme, img_path: str):
